@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIF 생성기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="upload-area">
+    <h1>GIF 생성기</h1>
+    <div id="drop-zone">이미지를 드래그하거나 클릭하여 업로드하세요</div>
+    <input type="file" id="imageUpload" multiple accept="image/*" style="display:none;">
+
+    <label for="speedRange">GIF 속도 (ms):</label>
+    <input type="range" id="speedRange" min="100" max="2000" value="500">
+
+    <div id="preview"></div>
+
+    <button id="createGIF">GIF 만들기</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gifshot/0.3.2/gifshot.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
